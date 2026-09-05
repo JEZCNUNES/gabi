@@ -1,14 +1,9 @@
 /* ==========================================================================
-   ⚙️ CONFIGURAÇÃO DE CHECKOUT - COLE SEUS LINKS DE PAGAMENTO AQUI
-   Suporta Hotmart, Kiwify, Eduzz, Kirvano, Monetizze, etc.
+   ⚙️ CONFIGURAÇÃO DE CHECKOUT - KIWIFY OFICIAL
    ========================================================================== */
 const CONFIG = {
-  // 1. Link de Checkout do Curso (R$ 37,90):
-  // Substitua pelo link de checkout da sua plataforma:
-  checkoutUrl: "COLE_SEU_LINK_DE_CHECKOUT_AQUI",
-
-  // 2. Link de Checkout com a Correção Individual (+ R$ 20,00 = R$ 57,90):
-  checkoutWithBumpUrl: "COLE_SEU_LINK_COM_BUMP_AQUI",
+  // Link oficial de checkout do curso Redação UEG Sem Mistério (Kiwify):
+  checkoutUrl: "https://pay.kiwify.com.br/ikjO2OI",
   
   // Data Oficial da Prova da UEG: 18 de Outubro às 13h00 (Horário de Brasília)
   examDate: new Date("2026-10-18T13:00:00-03:00").getTime()
@@ -148,70 +143,27 @@ function initScrollAnimations() {
  */
 function initCheckoutTriggers() {
   const checkoutButtons = document.querySelectorAll(".trigger-checkout");
-  const bumpCheckbox = document.getElementById("bump-checkbox");
 
   checkoutButtons.forEach(btn => {
     btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      
       const targetSection = document.getElementById("oferta");
       if (btn.classList.contains("scroll-to-offer") && targetSection) {
+        e.preventDefault();
         targetSection.scrollIntoView({ behavior: "smooth" });
         return;
       }
 
-      // Check if bump is included
-      const hasBump = bumpCheckbox && bumpCheckbox.checked;
-      const destination = hasBump ? CONFIG.checkoutWithBumpUrl : CONFIG.checkoutUrl;
-
-      // Direct redirection or fallback to checkout section
-      if (destination.includes("COLE_SEU_LINK") || destination.includes("YOUR_PRODUCT_ID") || !destination.startsWith("http")) {
-        // Scroll to the main pricing card
-        if (targetSection) {
-          targetSection.scrollIntoView({ behavior: "smooth" });
-          // Highlight card
-          const box = targetSection.querySelector(".checkout-box");
-          if (box) {
-            box.style.borderColor = "#FFD200";
-            box.style.boxShadow = "0 0 35px rgba(255, 210, 0, 0.4)";
-            setTimeout(() => {
-              box.style.borderColor = "";
-              box.style.boxShadow = "";
-            }, 1800);
-          }
+      // Direct redirection to official Kiwify checkout
+      if (CONFIG.checkoutUrl && CONFIG.checkoutUrl.startsWith("http")) {
+        if (btn.tagName.toLowerCase() === 'a') {
+          btn.href = CONFIG.checkoutUrl;
+        } else {
+          e.preventDefault();
+          window.open(CONFIG.checkoutUrl, "_blank");
         }
-      } else {
-        window.open(destination, "_blank");
       }
     });
   });
-
-  // Interactive toggle on order bump card
-  const orderBumpCard = document.getElementById("order-bump-card");
-  if (orderBumpCard && bumpCheckbox) {
-    orderBumpCard.addEventListener("click", (e) => {
-      if (e.target !== bumpCheckbox) {
-        bumpCheckbox.checked = !bumpCheckbox.checked;
-      }
-      updateBumpUI(bumpCheckbox.checked);
-    });
-
-    bumpCheckbox.addEventListener("change", () => {
-      updateBumpUI(bumpCheckbox.checked);
-    });
-  }
-
-  function updateBumpUI(isChecked) {
-    if (orderBumpCard) {
-      if (isChecked) {
-        orderBumpCard.style.borderColor = "#2563EB";
-        orderBumpCard.style.background = "#EFF6FF";
-      } else {
-        orderBumpCard.style.borderColor = "#EAB308";
-        orderBumpCard.style.background = "#FFFDF0";
-      }
-    }
-  }
 }
 
 /**
