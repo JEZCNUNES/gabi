@@ -23,18 +23,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="../assets/gpt-page.css">
+  <link rel="stylesheet" href="../assets/product-hub.css">
 </head>
 <body>
+  <!-- [AVISO AMIGAVEL ADBLOCK] -->
+  <div id="adblock-notice" style="display: none; background: #fef08a; color: #854d0e; padding: 12px 20px; text-align: center; font-size: 0.88rem; font-weight: 700; border-bottom: 2px solid #eab308; position: relative; z-index: 9999;">
+    💡 <strong>Dica de Acesso:</strong> Se algum botão ou material não abrir corretamente, pause o seu bloqueador de anúncios (AdBlock) para este site.
+    <button onclick="document.getElementById('adblock-notice').style.display='none'" style="margin-left: 15px; background: none; border: 1px solid #854d0e; border-radius: 4px; padding: 2px 8px; cursor: pointer; color: #854d0e; font-weight: 800;">✕ Fechar</button>
+  </div>
 
   <!-- [HEADER EXCLUSIVO DE ALUNOS] -->
-  <header class="gpt-header">
-    <div class="gpt-container gpt-header-inner">
-      <a href="../index.html" class="gpt-logo" title="Voltar para a página principal">
-        <img src="../assets/estude_logo_darkbg.png" alt="Estude com Gabrii Logo">
+  <header class="prod-header">
+    <div class="prod-container prod-header-inner">
+      <a href="../index.html" class="prod-logo" title="Voltar para a página principal">
+        <img src="../assets/estude_logo_darkbg.png" alt="Estude com Gabrii Logo" height="38" style="height: 38px; max-height: 38px; width: auto; max-width: 240px; display: block; object-fit: contain;">
       </a>
 
-      <div class="gpt-access-badge badge-whatsapp">
+      <div class="prod-access-badge badge-whatsapp">
         <span class="pulse-dot" style="background: #25D366; box-shadow: 0 0 10px #25D366;"></span>
         <span>Correção Individual Liberada</span>
       </div>
@@ -43,34 +48,34 @@
 
   <main>
     <!-- [HERO SHOWCASE SECTION] -->
-    <section class="gpt-hero">
-      <div class="gpt-container">
-        <div class="gpt-hero-grid">
+    <section class="prod-hero">
+      <div class="prod-container">
+        <div class="prod-hero-grid">
           
           <!-- Coluna da Esquerda: Textos & CTA do WhatsApp -->
-          <div class="gpt-hero-info">
-            <div class="gpt-hero-badge-tag" style="background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.4); color: #4ade80;">
-              ✍️ CORREÇÃO INDIVIDUAL • ORDER BUMP LIBERADO
+          <div class="prod-hero-info">
+            <div class="prod-hero-badge-tag" style="background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.4); color: #4ade80;">
+              ✍️ CORREÇÃO INDIVIDUAL • ACESSO EXCLUSIVO LIBERADO
             </div>
 
-            <h1 class="gpt-hero-title">
+            <h1 class="prod-hero-title">
               Sua Correção com a <br><span class="highlight" style="background: linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #86efac 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Professora Gabrii</span>
             </h1>
 
-            <div class="gpt-hero-desc">
+            <div class="prod-hero-desc">
               <strong>Parabéns pela sua decisão!</strong> Agora você conta com a análise detalhada e individual da <strong>Professora Gabrii</strong>. Ela vai corrigir seu texto linha por linha nos critérios rigorosos da banca da UEG, apontando exatamente onde você precisa ajustar para cravar <strong>90+ pontos</strong> no dia 18 de Outubro.
             </div>
 
             <!-- Benefícios em Pílulas -->
-            <div class="gpt-hero-pills">
-              <div class="gpt-pill"><span>✓</span> Análise Humana e Individual 1 a 1</div>
-              <div class="gpt-pill"><span>✓</span> Critérios Oficiais da Banca UEG</div>
-              <div class="gpt-pill"><span>✓</span> Envio Fácil e Rápido no WhatsApp</div>
-              <div class="gpt-pill"><span>✓</span> Nota Estimada Oficial (0 a 100)</div>
+            <div class="prod-hero-pills">
+              <div class="prod-pill"><span>✓</span> Análise Humana e Individual 1 a 1</div>
+              <div class="prod-pill"><span>✓</span> Critérios Oficiais da Banca UEG</div>
+              <div class="prod-pill"><span>✓</span> Envio Fácil e Rápido no WhatsApp</div>
+              <div class="prod-pill"><span>✓</span> Nota Estimada Oficial (0 a 100)</div>
             </div>
 
             <!-- BOTÃO PRINCIPAL DE ACESSO AO WHATSAPP -->
-            <div class="gpt-cta-wrapper">
+            <div class="prod-action-wrapper">
               <a href="https://wa.me/556296885272?text=Ol%C3%A1%2C%20Professora%20Gabrii!%20Acabei%20de%20adquirir%20a%20Corre%C3%A7%C3%A3o%20Individual%20da%20minha%20Reda%C3%A7%C3%A3o%20UEG%20e%20vim%20enviar%20o%20meu%20texto." target="_blank" rel="noopener noreferrer" class="btn-launch-whatsapp" id="btn-open-whatsapp">
                 <div class="btn-main-info">
                   <span class="btn-title">ENVIAR REDAÇÃO NO WHATSAPP</span>
@@ -80,7 +85,7 @@
               </a>
             </div>
 
-            <div class="gpt-meta-guarantee">
+            <div class="prod-meta-guarantee">
               <span>🔒 Atendimento individual e confidencial</span>
               <span>•</span>
               <span>📱 Aceita foto da folha ou texto digitado</span>
@@ -90,8 +95,8 @@
           </div>
 
           <!-- Coluna da Direita: Card Visual com a Foto da Professora -->
-          <div class="gpt-hero-media">
-            <div class="gpt-robot-card" style="border-color: rgba(37, 211, 102, 0.3);">
+          <div class="prod-hero-media">
+            <div class="prod-robot-card" style="border-color: rgba(37, 211, 102, 0.3);">
               <div class="robot-live-pill" style="border-color: rgba(37, 211, 102, 0.5); color: #34d399;">
                 <span class="pulse-dot" style="background: #25D366; box-shadow: 0 0 10px #25D366;"></span>
                 <span>● Professora Gabrii no WhatsApp</span>
@@ -119,8 +124,8 @@
     </section>
 
     <!-- [COMO ENVIAR EM 4 PASSOS] -->
-    <section class="gpt-steps-section">
-      <div class="gpt-container">
+    <section class="prod-steps-section">
+      <div class="prod-container">
         <div class="section-head">
           <span class="section-tag" style="color: #4ade80;">GUIA SIMPLES DE ENVIO</span>
           <h2>Como enviar sua redação para a Gabrii</h2>
@@ -155,8 +160,8 @@
     </section>
 
     <!-- [MODELO DE MENSAGEM PRONTO PARA O WHATSAPP] -->
-    <section class="gpt-prompt-section">
-      <div class="gpt-container">
+    <section class="prod-prompt-section">
+      <div class="prod-container">
         <div class="prompt-box-card" style="border-color: rgba(37, 211, 102, 0.3);">
           <div class="prompt-box-header">
             <h3>💬 Modelo de Mensagem para Copiar e Enviar no WhatsApp</h3>
@@ -179,8 +184,8 @@ Segue em anexo a foto / arquivo da minha redação para você corrigir: 👇</pr
     </section>
 
     <!-- [O QUE É ANALISADO PELA PROFESSORA] -->
-    <section class="gpt-criteria-section">
-      <div class="gpt-container">
+    <section class="prod-criteria-section">
+      <div class="prod-container">
         <div class="section-head">
           <span class="section-tag" style="color: #4ade80;">CRITÉRIOS RIGOROSOS</span>
           <h2>O que a Professora Gabrii analisa no seu texto</h2>
@@ -227,8 +232,8 @@ Segue em anexo a foto / arquivo da minha redação para você corrigir: 👇</pr
     </section>
 
     <!-- [DÚVIDAS FREQUENTES] -->
-    <section class="gpt-faq-section">
-      <div class="gpt-container">
+    <section class="prod-faq-section">
+      <div class="prod-container">
         <div class="section-head">
           <span class="section-tag" style="color: #4ade80;">PERGUNTAS FREQUENTES</span>
           <h2>Dúvidas sobre a Correção Individual</h2>
@@ -259,9 +264,9 @@ Segue em anexo a foto / arquivo da minha redação para você corrigir: 👇</pr
     </section>
 
     <!-- [CHAMADA FINAL / BOTTOM CTA] -->
-    <section class="gpt-bottom-cta">
-      <div class="gpt-container">
-        <div class="bottom-cta-box" style="border-color: rgba(37, 211, 102, 0.4); background: linear-gradient(135deg, rgba(18, 140, 126, 0.2), rgba(15, 23, 42, 0.85));">
+    <section class="prod-bottom-cta">
+      <div class="prod-container">
+        <div class="prod-callout-box" style="border-color: rgba(37, 211, 102, 0.4); background: linear-gradient(135deg, rgba(18, 140, 126, 0.2), rgba(15, 23, 42, 0.85));">
           <h3>Pronto para enviar sua redação?</h3>
           <p>Clique no botão abaixo para iniciar seu atendimento individual no WhatsApp com a Professora Gabrii.</p>
           
@@ -278,8 +283,8 @@ Segue em anexo a foto / arquivo da minha redação para você corrigir: 👇</pr
   </main>
 
   <!-- [RODAPÉ] -->
-  <footer class="gpt-footer">
-    <div class="gpt-container">
+  <footer class="prod-footer">
+    <div class="prod-container">
       <p>© 2026 Estude com Gabrii • Redação UEG Sem Mistério. Todos os direitos reservados.</p>
       <p style="margin-top: 6px; font-size: 0.75rem; color: #64748b;">Página exclusiva para alunos que adquiriram a Correção Individual com a Professora Gabrii.</p>
     </div>
@@ -330,5 +335,35 @@ Segue em anexo a foto / arquivo da minha redação para você corrigir: 👇</pr
       }
     }
   </script>
+      <script>
+    // Detector leve de bloqueador de anuncios
+    window.addEventListener('load', function() {
+      try {
+        const testAd = document.createElement('div');
+        testAd.innerHTML = '&nbsp;';
+        testAd.className = 'adsbox ad-placement textads banner-ad';
+        testAd.style.position = 'absolute';
+        testAd.style.left = '-9999px';
+        document.body.appendChild(testAd);
+        window.setTimeout(function() {
+          var isBlocked = false;
+          if (testAd.offsetHeight === 0 || testAd.clientHeight === 0) {
+            isBlocked = true;
+          } else {
+            var style = window.getComputedStyle(testAd);
+            if (style && (style.display === 'none' || style.visibility === 'hidden')) {
+              isBlocked = true;
+            }
+          }
+          if (isBlocked) {
+            const notice = document.getElementById('adblock-notice');
+            if (notice) notice.style.display = 'block';
+          }
+          testAd.remove();
+        }, 250);
+      } catch(e) {}
+    });
+  </script>
+
 </body>
 </html>
