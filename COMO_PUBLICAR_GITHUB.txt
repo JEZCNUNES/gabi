@@ -1,0 +1,30 @@
+========================================================
+COMO PUBLICAR ESTA PASTA NO GITHUB PAGES
+========================================================
+
+Esta pasta (SITE_PRONTO_GITHUB) já está com o Git inicializado,
+na branch 'main', com todos os 82 arquivos adicionados e commitados.
+
+PASSO A PASSO RÁPIDO (1 MINUTO):
+
+1. Crie um novo repositório público ou privado no seu GitHub:
+   https://github.com/new
+   (Exemplo de nome: redacao-ueg-sem-misterio)
+   *Não precisa marcar "Add README" nem ".gitignore", crie vazio.*
+
+2. Abra o Prompt de Comando (CMD) ou PowerShell nesta pasta e rode:
+
+   git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+   git push -u origin main
+
+   (Ou simplesmente dê dois cliques no arquivo: publicar_github.bat)
+
+3. No seu repositório no GitHub:
+   - Vá na aba "Settings" (Configurações)
+   - No menu lateral esquerdo, clique em "Pages"
+   - Em "Branch", selecione "main" e pasta "/ (root)"
+   - Clique no botão "Save"
+
+Pronto! Em cerca de 60 segundos seu site estará online gratuitamente no link:
+https://SEU_USUARIO.github.io/SEU_REPOSITORIO/
+========================================================
