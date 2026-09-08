@@ -25,6 +25,23 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1781002136239018');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1781002136239018&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -119,7 +136,7 @@
 
           <!-- Botão CTA Principal Hero (Sem Preço: Conduz à Descoberta) -->
           <div class="hero-cta-wrap">
-            <a href="#erro-enem" class="btn-cta pulse-shadow" id="hero-cta-button">
+            <a href="#oferta" class="btn-cta pulse-shadow trigger-checkout scroll-to-offer" id="hero-cta-button">
               <span>QUERO DESTRAVAR MINHA REDAÇÃO</span>
               <span class="btn-icon-pill" aria-hidden="true">➔</span>
             </a>
